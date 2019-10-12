@@ -76,7 +76,7 @@ pickle.dump(history, open("history.p", "wb"))
 model = load_model('keras_model.h5')
 history = pickle.load(open("history.p", "rb"))
 
-#Visualization part
+#Visualization part starts here
 plt.plot(history['acc'])
 plt.plot(history['val_acc'])
 plt.title('model accuracy')

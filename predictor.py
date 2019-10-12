@@ -45,7 +45,7 @@ for i in range(0, len(text) - SEQUENCE_LENGTH, step):
 print(f'num training examples: {len(sentences)}')
 
 
-#generating feature and labels
+#generating feature and label
 X = np.zeros((len(sentences), SEQUENCE_LENGTH, len(chars)), dtype=np.bool)
 y = np.zeros((len(sentences), len(chars)), dtype=np.bool)
 for i, sentence in enumerate(sentences):

@@ -23,7 +23,7 @@ rcParams['figure.figsize'] = 12, 5
 
 #LOad the Data
 
-path = 'any .txt file path from which the model is to be trained'
+path =' Any .txt file path from which the desired model is to be trained'
 text = open(path).read().lower()
 print('corpus length:', len(text))
 
